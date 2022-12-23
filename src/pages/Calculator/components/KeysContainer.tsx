@@ -17,14 +17,14 @@ function KeysContainer(props: KeysContainerProps) {
     }
 
     return (
-        <div key={key.value} className={key.wrapperClassName}>
-            <Key onClickEvent={onClickKeyHandler} className={key.className}>{key.value}</Key>
+        <div data-testid="key-wrapper" key={key.value} className={key.wrapperClassName}>
+            <Key onClickEvent={onClickKeyHandler} keyData={key} className={key.className}>{key.value}</Key>
         </div>
     )
   }
 
   return (
-    <div className='keys-container'>
+    <div data-testid="keys-container" className='keys-container'>
         {keysData.map(keysRender)}
     </div>
   );

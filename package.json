@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
     "@types/node": "^16.18.9",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
@@ -41,6 +40,10 @@
     ]
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.12",
+    "@types/jest": "^29.2.4",
+    "enzyme": "^3.11.0",
+    "react-test-renderer": "^18.2.0",
     "sass": "^1.56.2"
   }
 }

@@ -73,8 +73,8 @@ function Calculator() {
   }
 
   return (
-    <div className={`theme-${theme}`}>
-        <div className="calculator">
+    <div className={`theme-${theme}`} data-testid="theme-container">
+        <div data-testid="calculator" className="calculator">
                 <div className="calculator__container">
                     <div className="calculator__header">
                         <div className="calculator__title">

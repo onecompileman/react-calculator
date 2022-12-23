@@ -15,8 +15,8 @@ function DisplayScreen(props: DisplayScreenProps) {
 
   
     return (
-    <div className='display'>
-        <span>{evalString}</span>
+    <div className='display' data-testid="display">
+        <span data-testid="display-screen">{evalString}</span>
     </div>
   );
 }
