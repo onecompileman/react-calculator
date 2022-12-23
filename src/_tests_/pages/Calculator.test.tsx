@@ -28,6 +28,10 @@ describe('Test Calculator', () => {
         const expectedOutput2 = '11';
         const seriesOfKeyEvents2 = [KeyEvent.SIX, KeyEvent.PLUS, KeyEvent.FIVE, KeyEvent.EQUALS];
 
+        const expectedOutput3 = '27';
+        const seriesOfKeyEvents3 = [KeyEvent.SIX, KeyEvent.PLUS, KeyEvent.FIVE, KeyEvent.EQUALS, KeyEvent.MULTIPLY, KeyEvent.FIVE, KeyEvent.EQUALS, KeyEvent.MINUS, KeyEvent.ZERO, KeyEvent.EQUALS, KeyEvent.DIVIDE, KeyEvent.TWO, KeyEvent.EQUALS, KeyEvent.DEL, KeyEvent.DOT, KeyEvent.DEL, KeyEvent.DOT, KeyEvent.EQUALS];
+
+
         const component = render(<Calculator />);
         const displayScreenElement = screen.getByTestId('display-screen');
 
@@ -36,11 +40,23 @@ describe('Test Calculator', () => {
 
         executeSeriesOfKeyEvents([resetKeyEvent]);
 
-
         executeSeriesOfKeyEvents(seriesOfKeyEvents2);
         expect(displayScreenElement.textContent).toBe(expectedOutput2);
+        
+        executeSeriesOfKeyEvents([resetKeyEvent]);
+
+        executeSeriesOfKeyEvents(seriesOfKeyEvents3);
+        expect(displayScreenElement.textContent).toBe(expectedOutput3);
     });
 
 
+    it('should change Theme class on ThemeChanger event', () => {
+        const component = render(<Calculator />);
+        const themeChangerToggleElement = screen.getByTestId('theme-changer-toggle');
+        const themeContainerElement = screen.getByTestId('theme-container');
+        fireEvent.click(themeChangerToggleElement);
+        
+        expect(themeContainerElement.className).toBe('theme-2');
+    })
 
 });
