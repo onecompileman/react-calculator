@@ -1,0 +1,90 @@
+.theme-changer {
+    display: flex;
+    align-items: flex-end;
+    color: #fdfdfd;
+
+    &__name {
+        font-size: 14px;
+        margin-right: 25px;
+        margin-bottom: 5px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__themes {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        transition: 0.2s linear;
+
+    }
+
+    &__toggle {
+        width: 75px;
+        padding: 5px;
+        background-color: #252C46;
+        border-radius: 25px;
+    }
+
+    &__toggle-handle {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #CC422E;
+        cursor: pointer;
+    }
+
+}
+
+.theme-1 .theme-changer {
+    color: #fdfdfd;
+
+    &__toggle {
+        background-color: #252C46;
+
+    }
+
+    &__toggle-handle {
+        background-color: #CC422E;
+
+    }
+
+}
+
+.theme-2 .theme-changer {
+    color: #323229;
+
+    &__toggle {
+        background-color: #D3CDCE;
+
+    }
+
+
+    &__toggle-handle {
+        background-color: #CC5400;
+        margin-left: 25px;
+    }
+
+}
+
+.theme-3 .theme-changer {
+    color: #FDE640;
+
+    &__toggle {
+        background-color: #1E0836;
+
+    }
+
+    &__toggle-handle {
+        background-color: #03DCD2;
+        margin-left: 50px;
+    }
+
+}

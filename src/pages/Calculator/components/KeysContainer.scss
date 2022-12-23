@@ -1,0 +1,38 @@
+.keys-container {
+    background-color: #252D44;
+    border-radius: 7px;
+    // width: 100%;
+    text-align:right;
+    font-weight: bolder;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    padding: 15px;
+}
+
+.theme-1 .keys-container {
+    background-color: #252D44;
+}
+.theme-2 .keys-container {
+    background-color: #D3CDCD;
+}
+.theme-3 .keys-container {
+    background-color: #1E0836;
+}
+
+.key-wrapper {
+    width: 25%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.special-key-wrapper {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

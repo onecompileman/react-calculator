@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'League';
+    src: url('../assets/fonts/league/LeagueSpartan-SemiBold.ttf');
+  }
+
+* {
+    font-family: 'League';
+    transition: 0.2s linear;
+}

@@ -1,0 +1,20 @@
+export enum KeyEvent {
+    ZERO,
+    ONE,
+    TWO,
+    THREE,
+    FOUR,
+    FIVE,
+    SIX,
+    SEVEN,
+    EIGHT,
+    NINE,
+    DOT,
+    DEL,
+    PLUS,
+    MINUS,
+    DIVIDE,
+    MULTIPLY,
+    RESET,
+    EQUALS
+}

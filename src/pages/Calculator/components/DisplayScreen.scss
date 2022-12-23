@@ -1,0 +1,31 @@
+.display {
+    background-color: #181F32;
+    border-radius: 7px;
+    color: white;
+    text-align:right;
+    padding: 35px 25px;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 20px;
+    overflow-x: auto;
+
+    span {
+        height: 32px;
+        display: block;
+    }
+
+}
+
+.theme-1 .display {
+    background-color: #181F32;
+}
+
+.theme-2 .display {
+    background-color: #EEEEEE;
+    color: #37372F;
+}
+
+.theme-3 .display {
+    background-color: #1E0836;
+    color: #FDE640;
+}
