@@ -13,6 +13,8 @@ function Calculator() {
   const [evalString, setEvalString] = useState('');
   
   const onKeyClickHandler = (key: KeyEvent) => {
+    console.log(evalString);
+
     let evalStringToChange = evalString;
 
     if (key >= KeyEvent.ZERO && key <= KeyEvent.NINE) {
@@ -56,7 +58,7 @@ function Calculator() {
                 break;
         }
     }
-    setEvalString(evalStringToChange);
+    setEvalString(evalStringToChange + '');
   }
 
   const getLastNumberString = (numberStr: string) => {
