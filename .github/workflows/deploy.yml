@@ -6,13 +6,15 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build & Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
       - name: Install Dependencies
         run: npm install
+      - name: Test
+        run: npm run test
       - name: Build
         run: npm run build
       - name: Archive Production Artifact
